@@ -14,6 +14,10 @@ FOUNDATION_EXPORT double ValidatorsVersionNumber;
 //! Project version string for Validators.
 FOUNDATION_EXPORT const unsigned char ValidatorsVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <Validators/PublicHeader.h>
+#import "ELNAmountValidator.h"
+#import "ELNCharactersValidator.h"
+#import "ELNCompositeValidator.h"
+#import "ELNEmailValidator.h"
+#import "ELNStringLengthValidator.h"
 
 

@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "ELNEmailValidator.h"
+#import "Validators.h"
 
 @interface EmailValidatorTests : XCTestCase
 

@@ -7,9 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "ELNCompositeValidator.h"
-#import "ELNCharactersValidator.h"
-#import "ELNStringLengthValidator.h"
+#import "Validators.h"
 
 @interface CompositeValidatorTests : XCTestCase
 

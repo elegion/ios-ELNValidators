@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "ELNCharactersValidator.h"
+#import "Validators.h"
 
 @interface CharactersValidatorTests : XCTestCase
 

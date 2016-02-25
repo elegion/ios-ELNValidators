@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "ELNStringLengthValidator.h"
+#import "Validators.h"
 
 @interface StringLengthValidatorTests : XCTestCase
 
