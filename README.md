@@ -8,7 +8,26 @@
 - EmailValidator
 - CompositeValidator
 
-## String Length
+## Installation
+
+###Cocoapods
+
+```
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/elegion/ios-podspecs'
+
+pod 'Validators' 
+```
+
+###Carthage
+
+```
+github 'elegion/ios-Validators'
+```
+
+## Predefined Validators 
+
+###String Length
 
 Валидатор длины строки
 
@@ -17,7 +36,7 @@ ELNStringLengthValidator *validator = [[ELNStringLengthValidator alloc] initWith
 BOOL isValid = [validator isValid:@"123" error:nil];
 ```
 
-##Characters
+###Characters
 
 Валидатор допустимых символов
 
@@ -27,7 +46,7 @@ ELNCharactersValidator *validator = [[ELNCharactersValidator alloc] initWithAllo
 BOOL isValid = [validator isValid:@"123" error:nil];
 ```
 
-##Amount
+###Amount
 
 Валидатор денежной суммы
 
@@ -36,7 +55,7 @@ ELNAmountValidator *validator = [ELNAmountValidator new];
 BOOL isValid = [validator isValid:@"123.23" error:nil];
 ```
 
-##Email
+###Email
 
 Валидатор электронной почты
 
@@ -45,7 +64,7 @@ ELNEmailValidator *validator = [ELNEmailValidator new];
 BOOL isValid = [validator isValid:@"test@example.com" error:nil];
 ```
 
-##Composite
+###Composite
 
 Композиция нескольких валидаторов
 
@@ -56,5 +75,16 @@ ELNCompositeValidator *validator = [ELNCompositeValidator new];
 [validator addValidator:stringLengthValidator];
 [validator addValidator:charactersValidator];
 BOOL isValid = [validator isValid:@"12345" error:nil];
+```
+
+## Contribution
+
+###Cocoapods
+
+```sh
+# download source code, fix bugs, implement new features
+
+pod repo add legion https://github.com/elegion/ios-podspecs
+pod repo push legion Validators.podspec
 ```
 
