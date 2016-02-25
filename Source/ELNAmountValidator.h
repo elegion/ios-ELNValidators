@@ -23,6 +23,9 @@ typedef NS_ENUM(NSInteger, ELNAmountValidatorError) {
 
 @interface ELNAmountValidator : NSObject <ELNValidatorType>
 
+/// Includes "." and "," character
+@property (nonatomic, strong, readonly) NSCharacterSet *punctuationCharacterSet;
+
 /// Default integer part length is 15 digits
 @property (nonatomic, assign) NSUInteger maximumIntegerLength;
 
@@ -32,7 +35,7 @@ typedef NS_ENUM(NSInteger, ELNAmountValidatorError) {
 /// Default value is nil
 @property (nonatomic, strong, nullable) NSNumber *maxValue;
 
-/// Number formatter is used to validate maxValue.
+/// Number formatter is used to validate maxValue
 @property (nonatomic, strong, readonly) NSNumberFormatter *numberFormatter;
 
 @end
