@@ -8,6 +8,19 @@
 
 #import "ELNStringLengthValidator.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
+extern NSString * const ELNAmountValidatorErrorDomain;
+
+typedef NS_ENUM(NSInteger, ELNAmountValidatorError) {
+    ELNAmountValidatorErrorInvalidType = 1,
+    ELNAmountValidatorErrorNotANumber,
+    ELNAmountValidatorErrorEmptyValueDisallowed,
+    ELNAmountValidatorErrorIntegerLengthExceeded,
+    ELNAmountValidatorErrorFractionalLengthExceeded,
+    ELNAmountValidatorErrorMaximumValueExceeded
+};
+
 @interface ELNAmountValidator : NSObject <ELNValidatorType>
 
 /// Default integer part length is 15 digits
@@ -17,9 +30,11 @@
 @property (nonatomic, assign) NSUInteger maximumFractionalLength;
 
 /// Default value is nil
-@property (nonatomic, strong) NSNumber *maxValue;
+@property (nonatomic, strong, nullable) NSNumber *maxValue;
 
 /// Number formatter is used to validate maxValue.
 @property (nonatomic, strong, readonly) NSNumberFormatter *numberFormatter;
 
 @end
+
+NS_ASSUME_NONNULL_END

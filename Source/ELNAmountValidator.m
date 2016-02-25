@@ -9,6 +9,8 @@
 #import "ELNAmountValidator.h"
 #import "ELNCharactersValidator.h"
 
+NSString * const ELNAmountValidatorErrorDomain = @"com.e-legion.validator.amount.error";
+
 @interface ELNAmountValidator ()
 
 @property (nonatomic, strong) ELNCharactersValidator *charactersValidator;
@@ -54,6 +56,9 @@
 
 - (BOOL)isValid:(id)value error:(NSError *__autoreleasing *)error {
     if (![value isKindOfClass:[NSString class]]) {
+        if (error != NULL) {
+            *error = [NSError errorWithDomain:ELNAmountValidatorErrorDomain code:ELNAmountValidatorErrorInvalidType userInfo:nil];
+        }
         return NO;
     }
 
@@ -61,21 +66,33 @@
     
     NSArray<NSString *> *components = [string componentsSeparatedByCharactersInSet:self.punctuationCharacterSet];
     if (components.count > (self.maximumFractionalLength > 0 ? 2 : 1)) {
+        if (error != NULL) {
+            *error = [NSError errorWithDomain:ELNAmountValidatorErrorDomain code:ELNAmountValidatorErrorNotANumber userInfo:nil];
+        }
         return NO;
         
     } else if (components.count == 2) {
         if (components.lastObject.length > self.maximumFractionalLength) {
+            if (error != NULL) {
+                *error = [NSError errorWithDomain:ELNAmountValidatorErrorDomain code:ELNAmountValidatorErrorFractionalLengthExceeded userInfo:nil];
+            }
             return NO;
         }
     }
     
     if (components.firstObject.length > self.maximumIntegerLength) {
+        if (error != NULL) {
+            *error = [NSError errorWithDomain:ELNAmountValidatorErrorDomain code:ELNAmountValidatorErrorIntegerLengthExceeded userInfo:nil];
+        }
         return NO;
     }
 
     if (self.maxValue) {
         NSNumber *numberValue = [self.numberFormatter numberFromString:string];
         if (numberValue && [self.maxValue compare:numberValue] == NSOrderedAscending) {
+            if (error != NULL) {
+                *error = [NSError errorWithDomain:ELNAmountValidatorErrorDomain code:ELNAmountValidatorErrorMaximumValueExceeded userInfo:nil];
+            }
             return NO;
         }
     }

@@ -8,8 +8,12 @@
 
 #import "ELNValidatorType.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface ELNCompositeValidator : NSObject <ELNValidatorType>
 
 - (void)addValidator:(id<ELNValidatorType>)validator;
 
 @end
+
+NS_ASSUME_NONNULL_END
