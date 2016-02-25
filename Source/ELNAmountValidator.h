@@ -26,6 +26,9 @@ typedef NS_ENUM(NSInteger, ELNAmountValidatorError) {
 /// Includes "." and "," character
 @property (nonatomic, strong, readonly) NSCharacterSet *punctuationCharacterSet;
 
+/// Union of decimal character set and punctuation character set
+@property (nonatomic, strong, readonly) NSCharacterSet *allowedCharacterSet;
+
 /// Default integer part length is 15 digits
 @property (nonatomic, assign) NSUInteger maximumIntegerLength;
 

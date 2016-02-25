@@ -15,6 +15,7 @@ NSString * const ELNAmountValidatorErrorDomain = @"com.e-legion.validator.amount
 
 @property (nonatomic, strong) ELNCharactersValidator *charactersValidator;
 @property (nonatomic, strong) NSCharacterSet *punctuationCharacterSet;
+@property (nonatomic, strong) NSCharacterSet *allowedCharacterSet;
 @property (nonatomic, strong) NSNumberFormatter *numberFormatter;
 
 @end
@@ -30,6 +31,8 @@ NSString * const ELNAmountValidatorErrorDomain = @"com.e-legion.validator.amount
         
         NSMutableCharacterSet *allowedCharacterSet = [NSMutableCharacterSet decimalDigitCharacterSet];
         [allowedCharacterSet formUnionWithCharacterSet:self.punctuationCharacterSet];
+        self.allowedCharacterSet = [allowedCharacterSet copy];
+        
         self.charactersValidator = [[ELNCharactersValidator alloc] initWithAllowedCharacterSet:allowedCharacterSet];
         
         self.maximumIntegerLength = 15;
