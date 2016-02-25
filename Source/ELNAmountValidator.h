@@ -15,7 +15,7 @@ extern NSString * const ELNAmountValidatorErrorDomain;
 typedef NS_ENUM(NSInteger, ELNAmountValidatorError) {
     ELNAmountValidatorErrorInvalidType = 1,
     ELNAmountValidatorErrorNotANumber,
-    ELNAmountValidatorErrorEmptyValueDisallowed,
+    ELNAmountValidatorErrorFractionNotAllowed,
     ELNAmountValidatorErrorIntegerLengthExceeded,
     ELNAmountValidatorErrorFractionalLengthExceeded,
     ELNAmountValidatorErrorMaximumValueExceeded

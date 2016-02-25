@@ -68,6 +68,14 @@ NSString * const ELNAmountValidatorErrorDomain = @"com.e-legion.validator.amount
     NSString *string = value;
     
     NSArray<NSString *> *components = [string componentsSeparatedByCharactersInSet:self.punctuationCharacterSet];
+    
+    if (self.maximumFractionalLength == 0 && components.count == 2) {
+        if (error != NULL) {
+            *error = [NSError errorWithDomain:ELNAmountValidatorErrorDomain code:ELNAmountValidatorErrorFractionNotAllowed userInfo:nil];
+        }
+        return NO;
+    }
+    
     if (components.count > (self.maximumFractionalLength > 0 ? 2 : 1)) {
         if (error != NULL) {
             *error = [NSError errorWithDomain:ELNAmountValidatorErrorDomain code:ELNAmountValidatorErrorNotANumber userInfo:nil];

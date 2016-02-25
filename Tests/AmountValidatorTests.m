@@ -50,4 +50,18 @@
     XCTAssertFalse([self.validator isValid:@"1234.12" error:nil]);
 }
 
+- (void)testFractionNotAllowedError {
+    self.validator.maximumFractionalLength = 0;
+    NSError *error;
+    XCTAssertFalse([self.validator isValid:@"1234." error:&error]);
+    XCTAssertEqual(error.code, ELNAmountValidatorErrorFractionNotAllowed);
+}
+
+- (void)testMaximumValueExceededError {
+    self.validator.maxValue = @10;
+    NSError *error;
+    XCTAssertFalse([self.validator isValid:@"100" error:&error]);
+    XCTAssertEqual(error.code, ELNAmountValidatorErrorMaximumValueExceeded);
+}
+
 @end
