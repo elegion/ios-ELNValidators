@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.2"
   s.summary      = "Validators collection."
   s.homepage     = "https://github.com/elegion/ios-Validators"
-  s.license      = { :type => "MIT" }
+  s.license      = "MIT"
   s.author       = { "chebur" => "chebur.mail@gmail.com" }
   s.platform     = :ios
   s.source       = { :git => "https://github.com/elegion/ios-Validators.git", :tag => s.version }
