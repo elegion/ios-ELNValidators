@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ELNValidators"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "Validators collection."
   s.homepage     = "https://github.com/elegion/ios-ELNValidators"
   s.license      = "MIT"
