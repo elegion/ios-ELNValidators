@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111D9EEA1C85C2F700CF71B4 /* Default.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 111D9EE91C85C2F700CF71B4 /* Default.xcconfig */; };
 		115935ED1C7F147F00E0DE7E /* ELNValidators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115935E21C7F147F00E0DE7E /* ELNValidators.framework */; };
 		115936001C7F14F100E0DE7E /* ELNValidators.h in Headers */ = {isa = PBXBuildFile; fileRef = 115935FE1C7F14F100E0DE7E /* ELNValidators.h */; };
 		115936051C7F14FF00E0DE7E /* AmountValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 115936031C7F14FF00E0DE7E /* AmountValidatorTests.m */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		111D9EE91C85C2F700CF71B4 /* Default.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Default.xcconfig; sourceTree = "<group>"; };
 		115935E21C7F147F00E0DE7E /* ELNValidators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ELNValidators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		115935EC1C7F147F00E0DE7E /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		115935FD1C7F14F100E0DE7E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,8 +151,9 @@
 		115936381C7F16DB00E0DE7E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				115935FD1C7F14F100E0DE7E /* Info.plist */,
+				111D9EE91C85C2F700CF71B4 /* Default.xcconfig */,
 				115935FE1C7F14F100E0DE7E /* ELNValidators.h */,
+				115935FD1C7F14F100E0DE7E /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111D9EEA1C85C2F700CF71B4 /* Default.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +314,7 @@
 /* Begin XCBuildConfiguration section */
 		115935F41C7F147F00E0DE7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 111D9EE91C85C2F700CF71B4 /* Default.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -358,6 +363,7 @@
 		};
 		115935F51C7F147F00E0DE7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 111D9EE91C85C2F700CF71B4 /* Default.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
