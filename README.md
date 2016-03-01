@@ -2,11 +2,11 @@
 
 Коллекция валидаторов
 
-- StringLengthValidator
-- CharactersValidator
-- AmountValidator
-- EmailValidator
-- CompositeValidator
+- String Length Validator
+- Characters Validator
+- Amount Validator
+- Email Validator
+- Composite Validator
 
 ## Installation
 
@@ -16,13 +16,13 @@
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/elegion/ios-podspecs'
 
-pod 'Validators' 
+pod 'ELNValidators' 
 ```
 
 ###Carthage
 
 ```
-github 'elegion/ios-Validators'
+github 'elegion/ios-ELNValidators'
 ```
 
 ## Predefined Validators 
@@ -85,6 +85,6 @@ BOOL isValid = [validator isValid:@"12345" error:nil];
 # download source code, fix bugs, implement new features
 
 pod repo add legion https://github.com/elegion/ios-podspecs
-pod repo push legion Validators.podspec
+pod repo push legion ELNValidators.podspec
 ```
 
