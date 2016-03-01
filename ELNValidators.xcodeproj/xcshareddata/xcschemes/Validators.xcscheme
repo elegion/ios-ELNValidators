@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "115935E11C7F147F00E0DE7E"
-               BuildableName = "Validators.framework"
-               BlueprintName = "Validators"
-               ReferencedContainer = "container:Validators.xcodeproj">
+               BuildableName = "ELNValidators.framework"
+               BlueprintName = "ELNValidators"
+               ReferencedContainer = "container:ELNValidators.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,7 +36,7 @@
                BlueprintIdentifier = "115935EB1C7F147F00E0DE7E"
                BuildableName = "UnitTests.xctest"
                BlueprintName = "UnitTests"
-               ReferencedContainer = "container:Validators.xcodeproj">
+               ReferencedContainer = "container:ELNValidators.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "115935E11C7F147F00E0DE7E"
-            BuildableName = "Validators.framework"
-            BlueprintName = "Validators"
-            ReferencedContainer = "container:Validators.xcodeproj">
+            BuildableName = "ELNValidators.framework"
+            BlueprintName = "ELNValidators"
+            ReferencedContainer = "container:ELNValidators.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "115935E11C7F147F00E0DE7E"
-            BuildableName = "Validators.framework"
-            BlueprintName = "Validators"
-            ReferencedContainer = "container:Validators.xcodeproj">
+            BuildableName = "ELNValidators.framework"
+            BlueprintName = "ELNValidators"
+            ReferencedContainer = "container:ELNValidators.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -84,9 +84,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "115935E11C7F147F00E0DE7E"
-            BuildableName = "Validators.framework"
-            BlueprintName = "Validators"
-            ReferencedContainer = "container:Validators.xcodeproj">
+            BuildableName = "ELNValidators.framework"
+            BlueprintName = "ELNValidators"
+            ReferencedContainer = "container:ELNValidators.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

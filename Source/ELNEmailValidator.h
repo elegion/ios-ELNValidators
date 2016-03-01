@@ -1,6 +1,6 @@
 //
 //  ELNEmailValidator.h
-//  Validators
+//  ELNValidators
 //
 //  Created by Dmitry Nesterenko on 25.02.16.
 //  Copyright © 2016 e-legion. All rights reserved.

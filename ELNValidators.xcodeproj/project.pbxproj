@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		115935ED1C7F147F00E0DE7E /* Validators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115935E21C7F147F00E0DE7E /* Validators.framework */; };
-		115936001C7F14F100E0DE7E /* Validators.h in Headers */ = {isa = PBXBuildFile; fileRef = 115935FE1C7F14F100E0DE7E /* Validators.h */; };
+		115935ED1C7F147F00E0DE7E /* ELNValidators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115935E21C7F147F00E0DE7E /* ELNValidators.framework */; };
+		115936001C7F14F100E0DE7E /* ELNValidators.h in Headers */ = {isa = PBXBuildFile; fileRef = 115935FE1C7F14F100E0DE7E /* ELNValidators.h */; };
 		115936051C7F14FF00E0DE7E /* AmountValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 115936031C7F14FF00E0DE7E /* AmountValidatorTests.m */; };
 		1159362C1C7F155900E0DE7E /* ELNStringLengthValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1159361E1C7F155900E0DE7E /* ELNStringLengthValidator.h */; };
 		1159362D1C7F155900E0DE7E /* ELNStringLengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1159361F1C7F155900E0DE7E /* ELNStringLengthValidator.m */; };
@@ -38,10 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		115935E21C7F147F00E0DE7E /* Validators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Validators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		115935E21C7F147F00E0DE7E /* ELNValidators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ELNValidators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		115935EC1C7F147F00E0DE7E /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		115935FD1C7F14F100E0DE7E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		115935FE1C7F14F100E0DE7E /* Validators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validators.h; sourceTree = "<group>"; };
+		115935FE1C7F14F100E0DE7E /* ELNValidators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNValidators.h; sourceTree = "<group>"; };
 		115936021C7F14FF00E0DE7E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		115936031C7F14FF00E0DE7E /* AmountValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmountValidatorTests.m; sourceTree = "<group>"; };
 		1159361E1C7F155900E0DE7E /* ELNStringLengthValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNStringLengthValidator.h; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115935ED1C7F147F00E0DE7E /* Validators.framework in Frameworks */,
+				115935ED1C7F147F00E0DE7E /* ELNValidators.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 		115935E31C7F147F00E0DE7E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				115935E21C7F147F00E0DE7E /* Validators.framework */,
+				115935E21C7F147F00E0DE7E /* ELNValidators.framework */,
 				115935EC1C7F147F00E0DE7E /* UnitTests.xctest */,
 			);
 			name = Products;
@@ -150,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				115935FD1C7F14F100E0DE7E /* Info.plist */,
-				115935FE1C7F14F100E0DE7E /* Validators.h */,
+				115935FE1C7F14F100E0DE7E /* ELNValidators.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -175,7 +175,7 @@
 				1159362E1C7F155900E0DE7E /* ELNValidatorType.h in Headers */,
 				1159363B1C7F1C5500E0DE7E /* ELNEmailValidator.h in Headers */,
 				115936351C7F155900E0DE7E /* ELNAmountValidator.h in Headers */,
-				115936001C7F14F100E0DE7E /* Validators.h in Headers */,
+				115936001C7F14F100E0DE7E /* ELNValidators.h in Headers */,
 				1159362C1C7F155900E0DE7E /* ELNStringLengthValidator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,9 +183,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		115935E11C7F147F00E0DE7E /* Validators */ = {
+		115935E11C7F147F00E0DE7E /* ELNValidators */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 115935F61C7F147F00E0DE7E /* Build configuration list for PBXNativeTarget "Validators" */;
+			buildConfigurationList = 115935F61C7F147F00E0DE7E /* Build configuration list for PBXNativeTarget "ELNValidators" */;
 			buildPhases = (
 				115935DD1C7F147F00E0DE7E /* Sources */,
 				115935DE1C7F147F00E0DE7E /* Frameworks */,
@@ -196,9 +196,9 @@
 			);
 			dependencies = (
 			);
-			name = Validators;
+			name = ELNValidators;
 			productName = Validators;
-			productReference = 115935E21C7F147F00E0DE7E /* Validators.framework */;
+			productReference = 115935E21C7F147F00E0DE7E /* ELNValidators.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		115935EB1C7F147F00E0DE7E /* UnitTests */ = {
@@ -225,6 +225,7 @@
 		115935D91C7F147F00E0DE7E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ELN;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "e-legion";
 				TargetAttributes = {
@@ -236,7 +237,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 115935DC1C7F147F00E0DE7E /* Build configuration list for PBXProject "Validators" */;
+			buildConfigurationList = 115935DC1C7F147F00E0DE7E /* Build configuration list for PBXProject "ELNValidators" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -248,7 +249,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				115935E11C7F147F00E0DE7E /* Validators */,
+				115935E11C7F147F00E0DE7E /* ELNValidators */,
 				115935EB1C7F147F00E0DE7E /* UnitTests */,
 			);
 		};
@@ -301,7 +302,7 @@
 /* Begin PBXTargetDependency section */
 		115935EF1C7F147F00E0DE7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 115935E11C7F147F00E0DE7E /* Validators */;
+			target = 115935E11C7F147F00E0DE7E /* ELNValidators */;
 			targetProxy = 115935EE1C7F147F00E0DE7E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -408,7 +409,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-legion.Validators";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ELNValidators;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -424,7 +425,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-legion.Validators";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ELNValidators;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -452,7 +453,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		115935DC1C7F147F00E0DE7E /* Build configuration list for PBXProject "Validators" */ = {
+		115935DC1C7F147F00E0DE7E /* Build configuration list for PBXProject "ELNValidators" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				115935F41C7F147F00E0DE7E /* Debug */,
@@ -461,13 +462,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		115935F61C7F147F00E0DE7E /* Build configuration list for PBXNativeTarget "Validators" */ = {
+		115935F61C7F147F00E0DE7E /* Build configuration list for PBXNativeTarget "ELNValidators" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				115935F71C7F147F00E0DE7E /* Debug */,
 				115935F81C7F147F00E0DE7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		115935F91C7F147F00E0DE7E /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +478,7 @@
 				115935FB1C7F147F00E0DE7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
