@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/elegion/ios-podspecs.git'
+
+target 'elnvalidators', :exclusive => true do
+    pod 'ELNValidators', :path => '../'
+end
+
+target 'elnvalidatorsTests', :exclusive => true do
+    pod 'ELNValidators', :path => '../'
+end

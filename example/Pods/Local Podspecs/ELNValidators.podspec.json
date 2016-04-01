@@ -1,0 +1,21 @@
+{
+  "name": "ELNValidators",
+  "version": "0.0.8",
+  "summary": "Validators collection.",
+  "homepage": "https://github.com/elegion/ios-ELNValidators",
+  "license": "MIT",
+  "authors": {
+    "chebur": "chebur.mail@gmail.com"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/elegion/ios-ELNValidators.git",
+    "tag": "0.0.8"
+  },
+  "source_files": [
+    "Source",
+    "Source/**/*.{h,m}"
+  ]
+}

@@ -1,0 +1,14 @@
+PODS:
+  - ELNValidators (0.0.8)
+
+DEPENDENCIES:
+  - ELNValidators (from `../`)
+
+EXTERNAL SOURCES:
+  ELNValidators:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ELNValidators: d413ae4af5c7f471832a59b29b381432128c0dbc
+
+COCOAPODS: 0.39.0
