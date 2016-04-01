@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0563B24AF9F95DC96FD7EB1A3ACC7CCA /* ELNCharactersValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F79FE3783E7F80880AFA775F8B566 /* ELNCharactersValidator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2DAAA586AD7B2FD1C7BB8E1DC0BE7C4F /* ELNAmountValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1542839F83E31884A8D6089FBD5340D7 /* ELNAmountValidator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2EC1D304B5680FE6A62AFBC7028A24A1 /* ELNEmailValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 906D42C81427999443677D2F98EC6D65 /* ELNEmailValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0563B24AF9F95DC96FD7EB1A3ACC7CCA /* ELNCharactersValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D95AD3E6B2163E9D561CC18B270F5F /* ELNCharactersValidator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2DAAA586AD7B2FD1C7BB8E1DC0BE7C4F /* ELNAmountValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F70F0D84D2E532FF379602E9DEA0413 /* ELNAmountValidator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2EC1D304B5680FE6A62AFBC7028A24A1 /* ELNEmailValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C21416E64A0040D27FBD80621AD055 /* ELNEmailValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		336449B55AEFD46351DCDEB3BDE9760C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		4C087AFDF42D5F9B7F4597DC907DBC6B /* ELNStringLengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAAAB1A63BADBBA7239EC7B49620658 /* ELNStringLengthValidator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4C43A041BD4556CD4B52ED9ADEE928B8 /* ELNValidators-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD386D700F8075269959524202EAE186 /* ELNValidators-dummy.m */; };
-		5DC5789D0DE84C552D12DF6E381E19CC /* ELNValidators.h in Headers */ = {isa = PBXBuildFile; fileRef = 63497F6D7A1A41FA00D41DD0B7AAB996 /* ELNValidators.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B0EC5508F6F8356976A37EB42EBA7E3 /* ELNAmountValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 57BE00A2FC38FEE1FB8EDF11BC868369 /* ELNAmountValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C087AFDF42D5F9B7F4597DC907DBC6B /* ELNStringLengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = A7620699D0671B3DEE35EDA1BCAF4CF2 /* ELNStringLengthValidator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4C43A041BD4556CD4B52ED9ADEE928B8 /* ELNValidators-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA09A4500BEBFD5AFD0102E8E9E63FA5 /* ELNValidators-dummy.m */; };
+		5DC5789D0DE84C552D12DF6E381E19CC /* ELNValidators.h in Headers */ = {isa = PBXBuildFile; fileRef = 402C90395FDF5005C57DD35BE1BDC9E1 /* ELNValidators.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B0EC5508F6F8356976A37EB42EBA7E3 /* ELNAmountValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F24DF6E8EF763BEB8348124178B9D1B /* ELNAmountValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		733220BE3F8E4EA726AD4A7FAB94ACFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		81317AEA396A7FA912210B32D591DBC3 /* ELNValidatorType.h in Headers */ = {isa = PBXBuildFile; fileRef = B4557234E14B464E43B82A7F2BF8E803 /* ELNValidatorType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81317AEA396A7FA912210B32D591DBC3 /* ELNValidatorType.h in Headers */ = {isa = PBXBuildFile; fileRef = 50194A984CF9FD4589ABA01AEA6F2486 /* ELNValidatorType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8272A62999EFB17DE1ECB79AC22C030D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		8710B4B65C592D20F7CF3F6C01844E58 /* Pods-elnvalidators-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A9880073FFA3CC524F4564040828DE /* Pods-elnvalidators-dummy.m */; };
 		879EF19923B86E9B9408D0C088B35205 /* Pods-elnvalidatorsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC32A8EF2E2A30B78E75FE92062229FD /* Pods-elnvalidatorsTests-dummy.m */; };
-		8F950FFBFED4DD37E4C57417DBD5A302 /* ELNStringLengthValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5FB535F9704D2CE7695B8C8724C4FB /* ELNStringLengthValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8F30D21704FBF072659B3420E0DF3C9 /* ELNCharactersValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DC109539DAA61E2C4619B941F263CC2 /* ELNCharactersValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B958C4B9DB2AAA1492B957A19D2924A3 /* ELNCompositeValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 11462BB3626F137217F52BA1F7A500A0 /* ELNCompositeValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF54E397B7C9AC6651D5D03BEB67212B /* ELNCompositeValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 848638D033E2DDC13C6DE2AF56079B98 /* ELNCompositeValidator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CCF18C814E5C3BA3E39AF9920E76C909 /* ELNEmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A974184DDAA6C7259E6E9F815A1C59 /* ELNEmailValidator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8F950FFBFED4DD37E4C57417DBD5A302 /* ELNStringLengthValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3922E9E5DEF778D46367F26FA58F46D7 /* ELNStringLengthValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8F30D21704FBF072659B3420E0DF3C9 /* ELNCharactersValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 551F97C34ED7EA00D5FD09207C7A123A /* ELNCharactersValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B958C4B9DB2AAA1492B957A19D2924A3 /* ELNCompositeValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = BD6467263FC233050861C4DCD6CEE4A8 /* ELNCompositeValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF54E397B7C9AC6651D5D03BEB67212B /* ELNCompositeValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A2492A19F715B536444EBF556A4B3 /* ELNCompositeValidator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CCF18C814E5C3BA3E39AF9920E76C909 /* ELNEmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = F68F4E478534AB328F3818476B13BFFC /* ELNEmailValidator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,39 +46,39 @@
 
 /* Begin PBXFileReference section */
 		0472113774534D747DFA5E9AF5F622A2 /* Pods-elnvalidatorsTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-elnvalidatorsTests-resources.sh"; sourceTree = "<group>"; };
-		04A974184DDAA6C7259E6E9F815A1C59 /* ELNEmailValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELNEmailValidator.m; sourceTree = "<group>"; };
-		11462BB3626F137217F52BA1F7A500A0 /* ELNCompositeValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNCompositeValidator.h; sourceTree = "<group>"; };
-		1542839F83E31884A8D6089FBD5340D7 /* ELNAmountValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELNAmountValidator.m; sourceTree = "<group>"; };
+		1B8A2492A19F715B536444EBF556A4B3 /* ELNCompositeValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELNCompositeValidator.m; sourceTree = "<group>"; };
 		2869FD9B1E37C65030EDCB4337AE0DF1 /* Pods-elnvalidators-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-elnvalidators-acknowledgements.plist"; sourceTree = "<group>"; };
+		29C21416E64A0040D27FBD80621AD055 /* ELNEmailValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNEmailValidator.h; sourceTree = "<group>"; };
+		32D95AD3E6B2163E9D561CC18B270F5F /* ELNCharactersValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELNCharactersValidator.m; sourceTree = "<group>"; };
+		3922E9E5DEF778D46367F26FA58F46D7 /* ELNStringLengthValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNStringLengthValidator.h; sourceTree = "<group>"; };
 		39A9880073FFA3CC524F4564040828DE /* Pods-elnvalidators-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-elnvalidators-dummy.m"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		402C90395FDF5005C57DD35BE1BDC9E1 /* ELNValidators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNValidators.h; sourceTree = "<group>"; };
 		42915107A718FF9206679DB0389F72E4 /* Pods-elnvalidators.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-elnvalidators.debug.xcconfig"; sourceTree = "<group>"; };
 		44F06B9DEBA6AA9373151F49FA04A460 /* Pods-elnvalidatorsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-elnvalidatorsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		453BDA66E080C0F1AC7FB3006E46034B /* Pods-elnvalidatorsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-elnvalidatorsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		57BE00A2FC38FEE1FB8EDF11BC868369 /* ELNAmountValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNAmountValidator.h; sourceTree = "<group>"; };
-		5D5FB535F9704D2CE7695B8C8724C4FB /* ELNStringLengthValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNStringLengthValidator.h; sourceTree = "<group>"; };
+		50194A984CF9FD4589ABA01AEA6F2486 /* ELNValidatorType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNValidatorType.h; sourceTree = "<group>"; };
+		551F97C34ED7EA00D5FD09207C7A123A /* ELNCharactersValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNCharactersValidator.h; sourceTree = "<group>"; };
 		5ED83101F0856DB5E9AC674AA9E984B0 /* Pods-elnvalidators-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-elnvalidators-resources.sh"; sourceTree = "<group>"; };
-		63497F6D7A1A41FA00D41DD0B7AAB996 /* ELNValidators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNValidators.h; sourceTree = "<group>"; };
-		7DC109539DAA61E2C4619B941F263CC2 /* ELNCharactersValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNCharactersValidator.h; sourceTree = "<group>"; };
-		848638D033E2DDC13C6DE2AF56079B98 /* ELNCompositeValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELNCompositeValidator.m; sourceTree = "<group>"; };
-		906D42C81427999443677D2F98EC6D65 /* ELNEmailValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNEmailValidator.h; sourceTree = "<group>"; };
+		6F70F0D84D2E532FF379602E9DEA0413 /* ELNAmountValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELNAmountValidator.m; sourceTree = "<group>"; };
+		7F5CBA76CDA1D2C5F9C1B14A08305E2A /* ELNValidators.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELNValidators.xcconfig; sourceTree = "<group>"; };
 		95BF52CE0D2B37E983B4C8863FCC24EB /* Pods-elnvalidators.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-elnvalidators.release.xcconfig"; sourceTree = "<group>"; };
+		9F24DF6E8EF763BEB8348124178B9D1B /* ELNAmountValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNAmountValidator.h; sourceTree = "<group>"; };
+		A7620699D0671B3DEE35EDA1BCAF4CF2 /* ELNStringLengthValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELNStringLengthValidator.m; sourceTree = "<group>"; };
+		AA09A4500BEBFD5AFD0102E8E9E63FA5 /* ELNValidators-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ELNValidators-dummy.m"; sourceTree = "<group>"; };
 		B22F17C9CFDFD74627916D1177CDD17E /* Pods-elnvalidatorsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-elnvalidatorsTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B4557234E14B464E43B82A7F2BF8E803 /* ELNValidatorType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNValidatorType.h; sourceTree = "<group>"; };
 		B4667E68B4C0368952D010EC98DCD998 /* Pods-elnvalidators-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-elnvalidators-frameworks.sh"; sourceTree = "<group>"; };
 		B5E295E726DF9B2E391AA5A0EE594D2D /* Pods-elnvalidators-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-elnvalidators-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C1785995300D96E77CE6C4D2CA3FDD39 /* ELNValidators-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ELNValidators-prefix.pch"; sourceTree = "<group>"; };
+		BD6467263FC233050861C4DCD6CEE4A8 /* ELNCompositeValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELNCompositeValidator.h; sourceTree = "<group>"; };
 		DC7261690491D78DBB42E0A98F5F1CF7 /* Pods-elnvalidatorsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-elnvalidatorsTests-frameworks.sh"; sourceTree = "<group>"; };
 		DE76B215617FA3B425E55C0F66BC8DE1 /* libPods-elnvalidatorsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-elnvalidatorsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E048C8593F54FE031D4DCC7F5E054939 /* libPods-elnvalidators.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-elnvalidators.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9572C557759F2579CDA1EA324DB680C /* libELNValidators.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libELNValidators.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFAAAB1A63BADBBA7239EC7B49620658 /* ELNStringLengthValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELNStringLengthValidator.m; sourceTree = "<group>"; };
-		F17672945EFE6F179460B8FDD9D78AE2 /* ELNValidators.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELNValidators.xcconfig; sourceTree = "<group>"; };
+		ED2A9004D7300AE6909BA75231AB5046 /* ELNValidators-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ELNValidators-prefix.pch"; sourceTree = "<group>"; };
 		F23066F63A3EA21F488ED07F85602371 /* Pods-elnvalidatorsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-elnvalidatorsTests.release.xcconfig"; sourceTree = "<group>"; };
-		F97F79FE3783E7F80880AFA775F8B566 /* ELNCharactersValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELNCharactersValidator.m; sourceTree = "<group>"; };
+		F68F4E478534AB328F3818476B13BFFC /* ELNEmailValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELNEmailValidator.m; sourceTree = "<group>"; };
 		FC32A8EF2E2A30B78E75FE92062229FD /* Pods-elnvalidatorsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-elnvalidatorsTests-dummy.m"; sourceTree = "<group>"; };
-		FD386D700F8075269959524202EAE186 /* ELNValidators-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ELNValidators-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,21 +109,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3ABFB429AACF38A2A269F4AB53B78D09 /* Support Files */ = {
+		0F917B0ABBFC7E25882A9BD4E2E38140 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				F17672945EFE6F179460B8FDD9D78AE2 /* ELNValidators.xcconfig */,
-				FD386D700F8075269959524202EAE186 /* ELNValidators-dummy.m */,
-				C1785995300D96E77CE6C4D2CA3FDD39 /* ELNValidators-prefix.pch */,
+				9F24DF6E8EF763BEB8348124178B9D1B /* ELNAmountValidator.h */,
+				6F70F0D84D2E532FF379602E9DEA0413 /* ELNAmountValidator.m */,
+				551F97C34ED7EA00D5FD09207C7A123A /* ELNCharactersValidator.h */,
+				32D95AD3E6B2163E9D561CC18B270F5F /* ELNCharactersValidator.m */,
+				BD6467263FC233050861C4DCD6CEE4A8 /* ELNCompositeValidator.h */,
+				1B8A2492A19F715B536444EBF556A4B3 /* ELNCompositeValidator.m */,
+				29C21416E64A0040D27FBD80621AD055 /* ELNEmailValidator.h */,
+				F68F4E478534AB328F3818476B13BFFC /* ELNEmailValidator.m */,
+				3922E9E5DEF778D46367F26FA58F46D7 /* ELNStringLengthValidator.h */,
+				A7620699D0671B3DEE35EDA1BCAF4CF2 /* ELNStringLengthValidator.m */,
+				402C90395FDF5005C57DD35BE1BDC9E1 /* ELNValidators.h */,
+				50194A984CF9FD4589ABA01AEA6F2486 /* ELNValidatorType.h */,
 			);
-			name = "Support Files";
-			path = "example/Pods/Target Support Files/ELNValidators";
+			path = Source;
 			sourceTree = "<group>";
 		};
 		5575DEF1CEC424422965E2AFA898B1D7 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F3FEFCB9A5E0DE4127CA58BD2569E60A /* ELNValidators */,
+				A942301A36564FC2BE91A410D14AE0C6 /* ELNValidators */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -154,6 +162,16 @@
 			path = "Target Support Files/Pods-elnvalidators";
 			sourceTree = "<group>";
 		};
+		A942301A36564FC2BE91A410D14AE0C6 /* ELNValidators */ = {
+			isa = PBXGroup;
+			children = (
+				0F917B0ABBFC7E25882A9BD4E2E38140 /* Source */,
+				B72941349A530371D358C8D7FA727066 /* Support Files */,
+			);
+			name = ELNValidators;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		AF8729C3E819EE93355A53171EB35410 /* Pods-elnvalidatorsTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +196,17 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		B72941349A530371D358C8D7FA727066 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F5CBA76CDA1D2C5F9C1B14A08305E2A /* ELNValidators.xcconfig */,
+				AA09A4500BEBFD5AFD0102E8E9E63FA5 /* ELNValidators-dummy.m */,
+				ED2A9004D7300AE6909BA75231AB5046 /* ELNValidators-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ELNValidators";
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,25 +223,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C96C4F3F5B282EE18A1E68BEE937394F /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				57BE00A2FC38FEE1FB8EDF11BC868369 /* ELNAmountValidator.h */,
-				1542839F83E31884A8D6089FBD5340D7 /* ELNAmountValidator.m */,
-				7DC109539DAA61E2C4619B941F263CC2 /* ELNCharactersValidator.h */,
-				F97F79FE3783E7F80880AFA775F8B566 /* ELNCharactersValidator.m */,
-				11462BB3626F137217F52BA1F7A500A0 /* ELNCompositeValidator.h */,
-				848638D033E2DDC13C6DE2AF56079B98 /* ELNCompositeValidator.m */,
-				906D42C81427999443677D2F98EC6D65 /* ELNEmailValidator.h */,
-				04A974184DDAA6C7259E6E9F815A1C59 /* ELNEmailValidator.m */,
-				5D5FB535F9704D2CE7695B8C8724C4FB /* ELNStringLengthValidator.h */,
-				EFAAAB1A63BADBBA7239EC7B49620658 /* ELNStringLengthValidator.m */,
-				63497F6D7A1A41FA00D41DD0B7AAB996 /* ELNValidators.h */,
-				B4557234E14B464E43B82A7F2BF8E803 /* ELNValidatorType.h */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
 		EFAFD28306514F5E6F52BA295948ED36 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,16 +231,6 @@
 				DE76B215617FA3B425E55C0F66BC8DE1 /* libPods-elnvalidatorsTests.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		F3FEFCB9A5E0DE4127CA58BD2569E60A /* ELNValidators */ = {
-			isa = PBXGroup;
-			children = (
-				C96C4F3F5B282EE18A1E68BEE937394F /* Source */,
-				3ABFB429AACF38A2A269F4AB53B78D09 /* Support Files */,
-			);
-			name = ELNValidators;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,7 +399,7 @@
 		};
 		409BC1647D19DCC0B9CFE080580E89A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F17672945EFE6F179460B8FDD9D78AE2 /* ELNValidators.xcconfig */;
+			baseConfigurationReference = 7F5CBA76CDA1D2C5F9C1B14A08305E2A /* ELNValidators.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ELNValidators/ELNValidators-prefix.pch";
@@ -417,7 +417,7 @@
 		};
 		6726C05C9D2C3DAD9B859A0BD7401A83 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F17672945EFE6F179460B8FDD9D78AE2 /* ELNValidators.xcconfig */;
+			baseConfigurationReference = 7F5CBA76CDA1D2C5F9C1B14A08305E2A /* ELNValidators.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ELNValidators/ELNValidators-prefix.pch";

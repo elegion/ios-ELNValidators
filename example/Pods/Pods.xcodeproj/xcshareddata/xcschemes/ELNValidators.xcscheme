@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E814CDAACCFAC281DDEDCA47'
+               BlueprintIdentifier = 'FCB22B9DE42393AB209AAE2D'
                BlueprintName = 'ELNValidators'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libELNValidators.a'>
