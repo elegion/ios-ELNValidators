@@ -18,7 +18,6 @@
 		37801DF31CAE706B008F13D7 /* CompositeValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37801DEE1CAE706B008F13D7 /* CompositeValidatorTests.m */; };
 		37801DF41CAE706B008F13D7 /* EmailValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37801DEF1CAE706B008F13D7 /* EmailValidatorTests.m */; };
 		37801DF51CAE706B008F13D7 /* StringLengthValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37801DF01CAE706B008F13D7 /* StringLengthValidatorTests.m */; };
-		37801DF71CAE7092008F13D7 /* Default.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 37801DF61CAE7092008F13D7 /* Default.xcconfig */; };
 		683B821CC8A456BC96FA0ECC /* libPods-elnvalidatorsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AAC948CC0A567990CCB9D1 /* libPods-elnvalidatorsTests.a */; };
 		703D72FADDB02C08184CA9BC /* libPods-elnvalidators.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D792AABCE5BA97601BB5A5A /* libPods-elnvalidators.a */; };
 /* End PBXBuildFile section */
@@ -208,7 +207,7 @@
 		37801DBC1CAE702B008F13D7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "e-Legion";
 				TargetAttributes = {
 					37801DC31CAE702B008F13D7 = {
@@ -244,7 +243,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37801DF71CAE7092008F13D7 /* Default.xcconfig in Resources */,
 				37801DD71CAE702B008F13D7 /* LaunchScreen.storyboard in Resources */,
 				37801DD41CAE702B008F13D7 /* Assets.xcassets in Resources */,
 				37801DD21CAE702B008F13D7 /* Main.storyboard in Resources */,
