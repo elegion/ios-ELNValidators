@@ -22,7 +22,7 @@
 #pragma mark - NSCopying
 
 - (id)copyWithZone:(NSZone *)zone {
-    typeof(self) copy = [self.class new];
+    __typeof(self) copy = [self.class new];
     copy.minLength = self.minLength;
     copy.maxLength = self.maxLength;
     return copy;

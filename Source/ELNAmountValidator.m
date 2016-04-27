@@ -46,7 +46,7 @@ NSString * const ELNAmountValidatorErrorDomain = @"com.e-legion.validator.amount
 #pragma mark - NSCopying
 
 - (id)copyWithZone:(NSZone *)zone {
-    typeof(self) copy = [self.class new];
+    __typeof(self) copy = [self.class new];
     copy.maximumIntegerLength = self.maximumIntegerLength;
     copy.maximumFractionalLength = self.maximumFractionalLength;
     copy.charactersValidator = self.charactersValidator;
