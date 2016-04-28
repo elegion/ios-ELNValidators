@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol ELNValidatorType <NSObject, NSCopying>
 
-- (BOOL)isValid:(id)value error:(NSError **)error;
+- (BOOL)isValid:(nullable id)value error:(NSError **)error;
 
 @end
+
+NS_ASSUME_NONNULL_END
