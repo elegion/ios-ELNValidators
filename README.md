@@ -1,12 +1,85 @@
 #Validators
 
-Коллекция валидаторов
+Валидаторы для работы с формами
 
-- String Length Validator
-- Characters Validator
-- Amount Validator
-- Email Validator
-- Composite Validator
+## Usage
+
+Необходимо объявить класс формы, который наследуется от класса  `Form `. Инвалидные значения полей должны бросать `Error`, поэтому необходимо перечислить возможные ошибки.
+
+```swift
+import ELNValidators
+
+// Declare form errors and localized description
+enum OrderFormError: Error {
+    
+    case invalidFirstName
+    case invalidLastName
+	case invalidEmail
+    
+    var localizedDescription: String {
+        switch self {
+        case .invalidFirstName:
+            return "Please enter your first name"
+        case .invalidLastName:
+            return "Please enter your last name"
+        case .invalidEmail:
+            return "Please enter valid email"
+        }
+    }
+    
+}
+
+// Declare form
+class OrderForm : Form {
+    
+    var firstName: String?
+    
+    var lastName: String?
+    
+    var email: String?
+    
+    // first name can not be empty
+    func validateFirstName(_ ioValue: AutoreleasingUnsafeMutablePointer<AnyObject?>) throws {
+        guard let _ = ioValue.pointee as? String else {
+            throw OrderFormError.invalidFirstName
+        }
+    }
+    
+    // last name can not be empty
+    func validateLastName(_ ioValue: AutoreleasingUnsafeMutablePointer<AnyObject?>) throws {
+        guard let _ = ioValue.pointee as? String else {
+            throw OrderFormError.invalidLastName
+        }
+    }
+    
+    // email can not be empty and should be valid
+    func validateEmail(_ ioValue: AutoreleasingUnsafeMutablePointer<AnyObject?>) throws {
+        guard let value = ioValue.pointee as? String else {
+            throw OrderFormError.invalidEmail
+        }
+        
+        do {
+            try EmailValidator().validate(value)
+        } catch {
+            throw OrderFormError.invalidEmail
+        }
+    }
+
+}
+```
+
+Класс `Form` имеет методы `validate()` и `errors`, Метод `validate()` бросает ошибку, если хотя бы одно из полей формы невалидно. Метод `errors` возвращает все существующие ошибки формы. 
+
+Пример валидации:
+
+```swift
+// показать одну ошибку валидации
+let form = OrderForm()
+form.firstName = "first name"
+form.lastName = "last name"
+form.email = "invalidemail"
+showErrors(form.errors) // show "Please enter valid email" message
+```
 
 ## Installation
 
@@ -23,58 +96,6 @@ pod 'ELNValidators'
 
 ```
 github 'elegion/ios-ELNValidators'
-```
-
-## Predefined Validators 
-
-###String Length
-
-Валидатор длины строки
-
-```objective-c
-ELNStringLengthValidator *validator = [[ELNStringLengthValidator alloc] initWithMinLength:3 maxLength:6];
-BOOL isValid = [validator isValid:@"123" error:nil];
-```
-
-###Characters
-
-Валидатор допустимых символов
-
-```objective-c
-NSCharacterSet *allowedCharacterSet = [NSCharacterSet decimalDigitsCharacterSet];
-ELNCharactersValidator *validator = [[ELNCharactersValidator alloc] initWithAllowedCharacterSet:allowedCharacterSet];
-BOOL isValid = [validator isValid:@"123" error:nil];
-```
-
-###Amount
-
-Валидатор денежной суммы
-
-```objective-c
-ELNAmountValidator *validator = [ELNAmountValidator new];
-BOOL isValid = [validator isValid:@"123.23" error:nil];
-```
-
-###Email
-
-Валидатор электронной почты
-
-```objective-c
-ELNEmailValidator *validator = [ELNEmailValidator new];
-BOOL isValid = [validator isValid:@"test@example.com" error:nil];
-```
-
-###Composite
-
-Композиция нескольких валидаторов
-
-```objective-c
-ELNStringLengthValidator *stringLengthValidator = [[ELNStringLengthValidator alloc] initWithMinLength:0 maxLength:6];
-ELNCharactersValidator *charactersValidator = [[ELNCharactersValidator alloc] initWithAllowedCharacterSet:[NSCharacterSet decimalDigitsCharaterSet]];
-ELNCompositeValidator *validator = [ELNCompositeValidator new];
-[validator addValidator:stringLengthValidator];
-[validator addValidator:charactersValidator];
-BOOL isValid = [validator isValid:@"12345" error:nil];
 ```
 
 ## Contribution
