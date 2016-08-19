@@ -10,7 +10,7 @@ import Foundation
 
 open class Form : NSObject {
     
-    public func validateForInsert() throws {
+    open func validate() throws {
         for propertyName in PropertiesNamesSequence(self) {
             var value = self.value(forKey: propertyName) as AnyObject?
             try validateValue(&value, forKey: propertyName)
@@ -18,7 +18,7 @@ open class Form : NSObject {
     }
     
     // Returns all errors
-    public var errors: [Error] {
+    open var errors: [Error] {
         return PropertiesNamesSequence(self).flatMap { propertyName in
             var value = self.value(forKey: propertyName) as AnyObject?
             do {

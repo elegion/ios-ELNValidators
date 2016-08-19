@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Validator {
+public protocol Validator {
     
     associatedtype Value
     
