@@ -15,6 +15,7 @@
 		11F631881D66F5D3007239EC /* FormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F631871D66F5D3007239EC /* FormTests.swift */; };
 		11F6318A1D66F5D3007239EC /* ELNValidators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1118FB4E1D66F20F003B352E /* ELNValidators.framework */; };
 		11F631911D66F5E5007239EC /* OrderForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F631901D66F5E5007239EC /* OrderForm.swift */; };
+		11F631931D66FAC1007239EC /* EmailValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F631921D66FAC1007239EC /* EmailValidatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		11F631871D66F5D3007239EC /* FormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTests.swift; sourceTree = "<group>"; };
 		11F631891D66F5D3007239EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11F631901D66F5E5007239EC /* OrderForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderForm.swift; sourceTree = "<group>"; };
+		11F631921D66FAC1007239EC /* EmailValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		11F631861D66F5D3007239EC /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				11F631921D66FAC1007239EC /* EmailValidatorTests.swift */,
 				11F631871D66F5D3007239EC /* FormTests.swift */,
 				11F631891D66F5D3007239EC /* Info.plist */,
 				11F631901D66F5E5007239EC /* OrderForm.swift */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F631931D66FAC1007239EC /* EmailValidatorTests.swift in Sources */,
 				11F631911D66F5E5007239EC /* OrderForm.swift in Sources */,
 				11F631881D66F5D3007239EC /* FormTests.swift in Sources */,
 			);
