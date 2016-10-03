@@ -8,6 +8,8 @@
 
 #import "ELNCharactersValidator.h"
 
+NSString * const ELNCharactersValidatorErrorDomain = @"com.e-legion.validator.characters.error";
+
 @implementation ELNCharactersValidator
 
 #pragma mark - Initialization
@@ -32,6 +34,10 @@
 
 - (BOOL)isValid:(id)value error:(NSError *__autoreleasing *)error {
     if (![value isKindOfClass:[NSString class]]) {
+        if (error != NULL) {
+            *error = [NSError errorWithDomain:ELNCharactersValidatorErrorDomain code:ELNCharactersValidatorErrorInvalidType userInfo:nil];
+        }
+        
         return NO;
     }
     
