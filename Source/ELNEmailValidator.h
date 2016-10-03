@@ -8,6 +8,13 @@
 
 #import "ELNValidatorType.h"
 
+extern NSString * const ELNEmailValidatorErrorDomain;
+
+typedef NS_ENUM(NSInteger, ELNEmailValidatorError) {
+    ELNEmailValidatorErrorInvalidType = 1,
+    ELNEmailValidatorErrorEmailLenghtInsufficient
+};
+
 @interface ELNEmailValidator : NSObject <ELNValidatorType>
 
 @end
