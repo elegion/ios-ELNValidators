@@ -8,6 +8,14 @@
 
 #import "ELNValidatorType.h"
 
+typedef NS_ENUM(NSInteger, ELNStringLengthValidatorError) {
+    ELNStringLengthValidatorErrorInvalidType = 1,
+    ELNStringLengthValidatorErrorMinimumValueInsufficient,
+    ELNStringLengthValidatorErrorMaximumValueExceeded
+};
+
+extern NSString * const ELNStringLengthValidatorErrorDomain;
+
 @interface ELNStringLengthValidator : NSObject <ELNValidatorType>
 
 /// Default value is 0

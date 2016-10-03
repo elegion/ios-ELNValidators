@@ -8,6 +8,8 @@
 
 #import "ELNStringLengthValidator.h"
 
+NSString * const ELNStringLengthValidatorErrorDomain = @"com.e-legion.validator.stringLenght.error";
+
 @implementation ELNStringLengthValidator
 
 - (instancetype)initWithMinLength:(NSUInteger)minLength maxLength:(NSUInteger)maxLength {
@@ -32,6 +34,10 @@
 
 - (BOOL)isValid:(id)value error:(NSError *__autoreleasing *)error {
     if (![value isKindOfClass:[NSString class]]) {
+        if (error != NULL) {
+            *error = [NSError errorWithDomain:ELNStringLengthValidatorErrorDomain code:ELNStringLengthValidatorErrorInvalidType userInfo:nil];
+        }
+        
         return NO;
     }
     
@@ -39,11 +45,19 @@
 
     // min length
     if (string.length < self.minLength) {
+        if (error != NULL) {
+            *error = [NSError errorWithDomain:ELNStringLengthValidatorErrorDomain code:ELNStringLengthValidatorErrorMinimumValueInsufficient userInfo:nil];
+        }
+        
         return NO;
     }
     
     // max length
     if (string.length > self.maxLength) {
+        if (error != NULL) {
+            *error = [NSError errorWithDomain:ELNStringLengthValidatorErrorDomain code:ELNStringLengthValidatorErrorMaximumValueExceeded userInfo:nil];
+        }
+        
         return NO;
     }
     
